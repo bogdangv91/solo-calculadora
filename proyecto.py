@@ -52,14 +52,7 @@ if __name__ == "__main__":#Utilizamos la condición para ver si el script está 
         print("No ha seleccionado ninguna de las opciones (EUR/USD,)")
         sys.exit()
 
-       
-
-    
     cantidad = float(input("Inserte la cantidad de criptomonedas que desea convertir: ")) #El float lo ponemos para que pueda facilitarnos numeros decimales.
-  
-     
-    
     resultado = convertir_a_euros(criptomoneda, cantidad,moneda_a_convertir)
-    
     if resultado is not None:
         print(f"{cantidad} {criptomoneda} es aproximadamente {resultado:.2f}{moneda_a_convertir.upper()}.") # :. Indica el inicio.    2 indica que debe mostrar 2 digitos decimales despues del punto.     f indica que el numero debe ser formateado como un numero flotante.
