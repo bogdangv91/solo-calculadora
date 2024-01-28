@@ -30,11 +30,11 @@ def convertir_a_euros(criptomoneda, cantidad, moneda_a_convertir):
     else:
         return None
 
-if __name__ == "__main__":
+if __name__ == "__main__":#Utilizamos la condición para ver si el script está siendo ejecutado directamente.
     criptomoneda = input("Inserte el nombre de la criptomoneda que desea convertir: ")
 
     if criptomoneda:
-        print("Sigamos con el paso 2")
+        print("Pasamos al  paso 2")
     else:
         print("Debe insertar el nombre de la criptomoneda que desea convertir para seguir ejecutando el programa")
         sys.exit() #Nos  para el programa porque no se cumple la condición del if por lo tanto nos mostrara un mensaje de error.
@@ -44,11 +44,11 @@ if __name__ == "__main__":
     
     opcion = input("Inserte la oppción  en la que desea  recibir la conversión  : ")
     
-    if opcion == "EUR":
+    if opcion == "EUR": # Verifica si la opcion ingresada es EUR
         moneda_a_convertir = "eur"
-    elif opcion == "USD":
+    elif opcion == "USD": #Verifica si la opción ingresada es USD
         moneda_a_convertir = "usd"
-    else:
+    else:#En el caso de que la opción no sea ni EUR ni USD saldra el mensaje que le indiquemos en el print del else.
         print("No ha seleccionado ninguna de las opciones (EUR/USD,)")
         sys.exit()
 
