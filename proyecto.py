@@ -1,11 +1,11 @@
+# Descripción:
 # Instrucciones para ejecutar el programa:
 # Antes que nada debe ejecutar con play el programa,esta opción esta situada en la esquina superior derecha.
-#Paso 1: el programa le mostrara en pantalla el siguente mensaje: Inserte el nombre de la criptomoneda que desea convertir:(debera insertar el nombre que desea).
-#Paso 2: el programa le mostrará en pantalla el siguiente mensaje: Seleccione la moneda a la que desea convertir: EUR/USD
-#Paso 3: el programa le mostrara en pantalla el siguiente mensaje: Inserte la cantidad de criptomonedas que desea convertir:(deberá insertar la cantidad de monedas que deseea convertir).
-#Paso 4: finalmente el programa le devolverá la cantidad ya convertida a euros de la criptomoneda que le haya marcado en el paso 2.
-#En el caso de que cometa algun error siga las instruciones/mensajes que el programa le indica. Ejemplo : si no ingresa ninguna criptomoneda le saldra un mensaje de error en el cual dira:(Debe insertar el nombre de la criptomoneda que desea convertir para seguir ejecutando el programa).
-
+# Paso 1: el programa le mostrara en pantalla el siguente mensaje: Inserte el nombre de la criptomoneda que desea convertir:(debera insertar el nombre que desea).
+# Paso 2: el programa le mostrará en pantalla el siguiente mensaje: Seleccione la moneda a la que desea convertir: EUR/USD
+# Paso 3: el programa le mostrara en pantalla el siguiente mensaje: Inserte la cantidad de criptomonedas que desea convertir:(deberá insertar la cantidad de monedas que deseea convertir).
+# Paso 4: finalmente el programa le devolverá la cantidad ya convertida a euros de la criptomoneda que le haya marcado en el paso 2.
+# En el caso de que cometa algun error siga las instruciones/mensajes que el programa le indica. Ejemplo : si no ingresa ninguna criptomoneda le saldra un mensaje de error en el cual dira:(Debe insertar el nombre de la criptomoneda que desea convertir para seguir ejecutando el programa).
 import requests #He importado la biblioteca requests
 import sys #He importado el sys para poder cerrar el programa en caso de que no se cumplan las condiciones que le he marcado.
 
