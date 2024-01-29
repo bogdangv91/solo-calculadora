@@ -11,7 +11,7 @@ import sys #He importado el sys para poder cerrar el programa en caso de que no 
 
 def obtener_cambio(criptomoneda, moneda_a_convertir):
     url = f'https://api.coingecko.com/api/v3/simple/price?ids={criptomoneda}&vs_currencies={moneda_a_convertir}' #La f nos indica que se trata de una cadena de formato(f-string). 
-           #&vs_currencies=eur es un parametro que indica que  queremos obtener el precio en euros. El & se utiliza para concatenar este parametro a la URL.
+           #&vs_currencies= moneda_a_convertir es un parametro que indica que  queremos obtener el precio en euros. El & se utiliza para concatenar este parametro a la URL.
     respuesta = requests.get(url) #Aqui se utiliza el get  en la variable respuesta de la biblioteca request para hacer una solicitud HTTP a la URL
     if respuesta.status_code == 200: #Si la respuesta es 200 indica que ha ido todo bien. status_code es un atributo de respuesta que contiene el codigo de estado HTTP 
         cifra = respuesta.json() #Aqui estamos convirtiendo la respuesta en formato json.
@@ -46,8 +46,12 @@ if __name__ == "__main__":#Utilizamos la condición para ver si el script está 
     elif opcion == "USD": #Verifica si la opción ingresada es USD
         moneda_a_convertir = "usd"
     else:#En el caso de que la opción no sea ni EUR ni USD saldra el mensaje que le indiquemos en el print del else.
-        print("No ha seleccionado ninguna de las opciones (EUR/USD,)")
+        print("No ha seleccionado ninguna de las opciones (EUR/USD)")
         sys.exit()
+
+
+
+        
 
     cantidad = float(input("Inserte la cantidad de criptomonedas que desea convertir: ")) #El float lo ponemos para que pueda facilitarnos numeros decimales.
     resultado = convertir_a_euros(criptomoneda, cantidad,moneda_a_convertir)
